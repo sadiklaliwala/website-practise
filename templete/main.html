@@ -1,0 +1,73 @@
+
+{% extends "base.html" %}
+
+{% block title %}sadik{% endblock title %}
+
+{% block body  %}
+<div class="container-fluied">
+    <div id="carouselExample" class="carousel slide my-4 py-4  ">
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid w-100 " >
+            <img src="/static/1.jpg" class="d-block w-100" alt="..." width="309" height="296">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/2.jpg" class="d-block w-100" alt="..."height="296">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/3.jpg" class="d-block w-100" alt="..."height="296">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+<div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom text-center  mb">garibo buy ice cream </h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"></use></svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">choclate ice cream  </h3>
+        <p>choclate will give you the best felling of eating ice cream </p>
+        <a href="#" class="btn btn-primary">
+          Oreder</a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"></use></svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">venilla ice cream </h3>
+        <p>choclate will give you the best felling of eating ice cream</p>
+        <a href="#" class="btn btn-primary">
+          Oreder
+        </a>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"></use></svg>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Tawa ice cream </h3>
+        <p>Tawa ice cream give you thr best feeling to you because this ice cream is hot </p>
+        <a href="#" class="btn btn-primary">
+          Oreder
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+{% load static %}
+    <a href="{%static 'static/test.txt' %}" >Click me </a>
+    
+{% endblock body  %}
